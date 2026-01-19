@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshuman Singh – Software Engineer | Portfolio</title>
+    <meta name="description" content="Software Engineer with 2+ years of experience in Java, Spring Boot, React, and Microservices. Explore interactive demos of my projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor glow effect -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <span class="brand-text">AS</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Anshuman Singh</h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-static">I'm a</span>
+                    <span class="hero-title" id="typingText"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Building enterprise solutions with <span class="highlight">Java</span>, 
+                    <span class="highlight">Spring Boot</span>, and <span class="highlight">React</span>. 
+                    Passionate about creating seamless user experiences and scalable architectures.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-orbit">
+                    <div class="orbit-ring ring-1">
+                        <div class="orbit-icon" data-tech="Java">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        </div>
+                    </div>
+                    <div class="orbit-ring ring-2">
+                        <div class="orbit-icon" data-tech="Spring">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring">
+                        </div>
+                        <div class="orbit-icon" data-tech="React" style="--delay: 0.5">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        </div>
+                    </div>
+                    <div class="orbit-ring ring-3">
+                        <div class="orbit-icon" data-tech="TypeScript">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        </div>
+                        <div class="orbit-icon" data-tech="PostgreSQL" style="--delay: 0.33">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                        </div>
+                        <div class="orbit-icon" data-tech="Git" style="--delay: 0.66">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        </div>
+                    </div>
+                    <div class="orbit-center">
+                        <span class="center-text">AS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-header">
+            <span class="section-tag">What I Know</span>
+            <h2 class="section-title">Technical Skills</h2>
+            <p class="section-subtitle">Hover over each skill to explore my proficiency</p>
+        </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3 class="category-title">
+                    <span class="category-icon">⚡</span>
+                    Languages
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="Java" data-level="90">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>Java</strong>
+                            <p>2+ years of enterprise development</p>
+                            <ul>
+                                <li>Spring Boot microservices</li>
+                                <li>REST API development</li>
+                                <li>OOP & Design Patterns</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="JavaScript" data-level="85">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>JavaScript</strong>
+                            <p>Frontend & SDK development</p>
+                            <ul>
+                                <li>ES6+ features</li>
+                                <li>Async programming</li>
+                                <li>DOM manipulation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="TypeScript" data-level="80">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>TypeScript</strong>
+                            <p>Type-safe React development</p>
+                            <ul>
+                                <li>Interfaces & Types</li>
+                                <li>Generics</li>
+                                <li>React + TS patterns</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="SQL" data-level="75">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>SQL</strong>
+                            <p>Database design & queries</p>
+                            <ul>
+                                <li>Complex queries</li>
+                                <li>Performance tuning</li>
+                                <li>Schema design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🚀</span>
+                    Frameworks
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="Spring Boot" data-level="88">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>Spring Boot</strong>
+                            <p>Enterprise microservices</p>
+                            <ul>
+                                <li>REST APIs</li>
+                                <li>Security & Auth</li>
+                                <li>Data JPA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="React" data-level="85">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>React</strong>
+                            <p>Component-based UI development</p>
+                            <ul>
+                                <li>Hooks & Context</li>
+                                <li>Redux state management</li>
+                                <li>Responsive design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="Redux" data-level="75">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="Redux">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Redux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>Redux</strong>
+                            <p>State management</p>
+                            <ul>
+                                <li>Redux Toolkit</li>
+                                <li>Async thunks</li>
+                                <li>Middleware</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 class="category-title">
+                    <span class="category-icon">🛠️</span>
+                    Tools & Databases
+                </h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-skill="Git" data-level="85">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>Git</strong>
+                            <p>Version control</p>
+                            <ul>
+                                <li>Branching strategies</li>
+                                <li>Code reviews</li>
+                                <li>CI/CD integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="PostgreSQL" data-level="78">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>PostgreSQL</strong>
+                            <p>Relational database</p>
+                            <ul>
+                                <li>Query optimization</li>
+                                <li>Indexing</li>
+                                <li>Data modeling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill-card" data-skill="Azure DevOps" data-level="70">
+                        <div class="skill-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+                        </div>
+                        <div class="skill-info">
+                            <span class="skill-name">Azure DevOps</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-tooltip">
+                            <strong>Azure DevOps</strong>
+                            <p>CI/CD & Project management</p>
+                            <ul>
+                                <li>Pipelines</li>
+                                <li>Boards</li>
+                                <li>Repos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-header">
+            <span class="section-tag">Interactive Demos</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Experience my work through live interactive demos</p>
+        </div>
+
+        <!-- Chatbot Demo -->
+        <div class="project-showcase" id="chatbot-project">
+            <div class="project-info">
+                <div class="project-badge">Live Demo</div>
+                <h3 class="project-title">Conversational AI Chatbot</h3>
+                <p class="project-description">
+                    An enterprise chatbot integrated with a Learning Management System, enabling learners 
+                    to check progress, access course details, download transcripts, and discover new courses 
+                    through natural conversation.
+                </p>
+                <div class="project-impact">
+                    <div class="impact-stat">
+                        <span class="impact-number" data-count="30">0</span>
+                        <span class="impact-suffix">%</span>
+                        <span class="impact-label">Reduced Support Queries</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="impact-icon">🎯</span>
+                        <span class="impact-label">Real-time Progress Tracking</span>
+                    </div>
+                    <div class="impact-stat">
+                        <span class="impact-icon">📚</span>
+                        <span class="impact-label">Course Discovery</span>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">Microservices</span>
+                </div>
+            </div>
+            <div class="project-demo">
+                <div class="chatbot-container">
+                    <div class="chatbot-header">
+                        <div class="chatbot-avatar">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                            </svg>
+                        </div>
+                        <div class="chatbot-info">
+                            <span class="chatbot-name">LMS Assistant</span>
+                            <span class="chatbot-status">
+                                <span class="status-dot"></span>
+                                Online
+                            </span>
+                        </div>
+                        <button class="chatbot-menu">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="5" r="2"/>
+                                <circle cx="12" cy="12" r="2"/>
+                                <circle cx="12" cy="19" r="2"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="chatbot-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                </svg>
+                            </div>
+                            <div class="message-content">
+                                <p>👋 Hi! I'm your LMS Assistant. I can help you with:</p>
+                                <ul>
+                                    <li>📊 View your course progress</li>
+                                    <li>📚 Check enrolled courses</li>
+                                    <li>📄 Download transcripts</li>
+                                    <li>🎯 Get course recommendations</li>
+                                </ul>
+                                <p>Try asking me something!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chatbot-suggestions" id="chatSuggestions">
+                        <button class="suggestion-btn" data-query="Show my progress">📊 Show my progress</button>
+                        <button class="suggestion-btn" data-query="My enrolled courses">📚 My courses</button>
+                        <button class="suggestion-btn" data-query="Download transcript">📄 Transcript</button>
+                        <button class="suggestion-btn" data-query="Recommend courses">🎯 Recommendations</button>
+                    </div>
+                    <div class="chatbot-input">
+                        <input type="text" id="chatInput" placeholder="Type a message..." autocomplete="off">
+                        <button class="send-btn" id="sendBtn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendation System Demo -->
+        <div class="project-showcase reverse" id="recommendation-project">
+            <div class="project-info">
+                <div class="project-badge">Interactive Visualization</div>
+                <h3 class="project-title">Learning Recommendation System</h3>
+                <p class="project-description">
+                    A database-driven recommendation engine supporting multiple strategies to help learners 
+                    discover relevant courses based on their peers, preferences, department, and trending topics.
+                </p>
+                <p class="project-instruction">👇 Click each strategy to see how it works</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">REST API</span>
+                </div>
+            </div>
+            <div class="project-demo">
+                <div class="recommendation-container">
+                    <div class="rec-tabs">
+                        <button class="rec-tab active" data-strategy="peer">
+                            <span class="tab-icon">👥</span>
+                            <span class="tab-label">Peer Based</span>
+                        </button>
+                        <button class="rec-tab" data-strategy="personalized">
+                            <span class="tab-icon">🎯</span>
+                            <span class="tab-label">Personalized</span>
+                        </button>
+                        <button class="rec-tab" data-strategy="department">
+                            <span class="tab-icon">🏢</span>
+                            <span class="tab-label">Department</span>
+                        </button>
+                        <button class="rec-tab" data-strategy="trending">
+                            <span class="tab-icon">📈</span>
+                            <span class="tab-label">Trending</span>
+                        </button>
+                    </div>
+                    <div class="rec-visualization">
+                        <!-- Peer Based -->
+                        <div class="rec-panel active" id="rec-peer">
+                            <div class="network-graph">
+                                <div class="node user-node">You</div>
+                                <div class="node peer-node" style="--angle: 0deg; --distance: 100px;">Peer 1</div>
+                                <div class="node peer-node" style="--angle: 72deg; --distance: 100px;">Peer 2</div>
+                                <div class="node peer-node" style="--angle: 144deg; --distance: 100px;">Peer 3</div>
+                                <div class="node peer-node" style="--angle: 216deg; --distance: 100px;">Peer 4</div>
+                                <div class="node peer-node" style="--angle: 288deg; --distance: 100px;">Peer 5</div>
+                                <svg class="network-lines">
+                                    <line class="connection" x1="50%" y1="50%" x2="50%" y2="10%"/>
+                                    <line class="connection" x1="50%" y1="50%" x2="90%" y2="35%"/>
+                                    <line class="connection" x1="50%" y1="50%" x2="75%" y2="85%"/>
+                                    <line class="connection" x1="50%" y1="50%" x2="25%" y2="85%"/>
+                                    <line class="connection" x1="50%" y1="50%" x2="10%" y2="35%"/>
+                                </svg>
+                            </div>
+                            <div class="rec-description">
+                                <h4>Peer-Based Recommendations</h4>
+                                <p>Analyzes courses completed by peers with similar roles and learning patterns to suggest relevant content.</p>
+                                <div class="rec-courses">
+                                    <div class="rec-course">
+                                        <span class="course-icon">📘</span>
+                                        <span>Advanced Java Patterns</span>
+                                        <span class="match-score">92% match</span>
+                                    </div>
+                                    <div class="rec-course">
+                                        <span class="course-icon">📗</span>
+                                        <span>Microservices Architecture</span>
+                                        <span class="match-score">88% match</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Personalized -->
+                        <div class="rec-panel" id="rec-personalized">
+                            <div class="preference-match">
+                                <div class="user-prefs">
+                                    <h5>Your Preferences</h5>
+                                    <div class="pref-tags">
+                                        <span class="pref-tag">Backend</span>
+                                        <span class="pref-tag">Java</span>
+                                        <span class="pref-tag">APIs</span>
+                                    </div>
+                                </div>
+                                <div class="match-animation">
+                                    <div class="match-line"></div>
+                                    <div class="match-icon">✨</div>
+                                </div>
+                                <div class="course-matches">
+                                    <h5>Matched Courses</h5>
+                                    <div class="pref-tags">
+                                        <span class="pref-tag match">Spring Security</span>
+                                        <span class="pref-tag match">REST Best Practices</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rec-description">
+                                <h4>Personalized Recommendations</h4>
+                                <p>Uses your learning history, skill gaps, and stated preferences to curate a personalized learning path.</p>
+                                <div class="rec-courses">
+                                    <div class="rec-course">
+                                        <span class="course-icon">🎯</span>
+                                        <span>Spring Security Deep Dive</span>
+                                        <span class="match-score">95% match</span>
+                                    </div>
+                                    <div class="rec-course">
+                                        <span class="course-icon">🎯</span>
+                                        <span>API Design Mastery</span>
+                                        <span class="match-score">91% match</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Department -->
+                        <div class="rec-panel" id="rec-department">
+                            <div class="org-chart">
+                                <div class="org-node company">Company</div>
+                                <div class="org-level">
+                                    <div class="org-node dept">Engineering</div>
+                                    <div class="org-node dept inactive">Marketing</div>
+                                    <div class="org-node dept inactive">Sales</div>
+                                </div>
+                                <div class="org-node team highlight">Your Team</div>
+                            </div>
+                            <div class="rec-description">
+                                <h4>Department Recommendations</h4>
+                                <p>Surfaces courses aligned with your department's goals, required certifications, and team skill requirements.</p>
+                                <div class="rec-courses">
+                                    <div class="rec-course">
+                                        <span class="course-icon">🏢</span>
+                                        <span>Cloud Architecture Fundamentals</span>
+                                        <span class="match-score">Required</span>
+                                    </div>
+                                    <div class="rec-course">
+                                        <span class="course-icon">🏢</span>
+                                        <span>Agile Development Practices</span>
+                                        <span class="match-score">Suggested</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trending -->
+                        <div class="rec-panel" id="rec-trending">
+                            <div class="trending-chart">
+                                <div class="chart-bar" style="--height: 90%">
+                                    <span class="bar-label">AI/ML</span>
+                                    <span class="bar-value">+127%</span>
+                                </div>
+                                <div class="chart-bar" style="--height: 75%">
+                                    <span class="bar-label">Cloud</span>
+                                    <span class="bar-value">+89%</span>
+                                </div>
+                                <div class="chart-bar" style="--height: 60%">
+                                    <span class="bar-label">Security</span>
+                                    <span class="bar-value">+62%</span>
+                                </div>
+                                <div class="chart-bar" style="--height: 45%">
+                                    <span class="bar-label">DevOps</span>
+                                    <span class="bar-value">+45%</span>
+                                </div>
+                            </div>
+                            <div class="rec-description">
+                                <h4>Network Trending</h4>
+                                <p>Highlights courses gaining popularity across your organization's learning network in real-time.</p>
+                                <div class="rec-courses">
+                                    <div class="rec-course">
+                                        <span class="course-icon">🔥</span>
+                                        <span>Intro to Machine Learning</span>
+                                        <span class="match-score trending">🔥 Hot</span>
+                                    </div>
+                                    <div class="rec-course">
+                                        <span class="course-icon">📈</span>
+                                        <span>AWS Solutions Architect</span>
+                                        <span class="match-score trending">📈 Rising</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Architecture Diagram -->
+        <div class="project-showcase" id="architecture-project">
+            <div class="project-info">
+                <div class="project-badge">System Design</div>
+                <h3 class="project-title">Microservices Architecture</h3>
+                <p class="project-description">
+                    Designed and implemented scalable microservices architecture for enterprise LMS platform, 
+                    handling authentication, course management, and AI-powered features.
+                </p>
+                <p class="project-instruction">👇 Hover over components to see details</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">REST APIs</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Microservices</span>
+                </div>
+            </div>
+            <div class="project-demo">
+                <div class="architecture-container">
+                    <div class="arch-layer client-layer">
+                        <div class="layer-label">Client Layer</div>
+                        <div class="arch-node" data-info="React + TypeScript frontend with reusable component library">
+                            <span class="node-icon">🖥️</span>
+                            <span class="node-label">React App</span>
+                        </div>
+                        <div class="arch-node" data-info="Embeddable JavaScript SDK for chatbot integration">
+                            <span class="node-icon">📦</span>
+                            <span class="node-label">Chatbot SDK</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">
+                        <svg viewBox="0 0 24 60" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 0 L12 50 M6 44 L12 50 L18 44"/>
+                        </svg>
+                        <span class="arrow-label">REST / WebSocket</span>
+                    </div>
+                    <div class="arch-layer api-layer">
+                        <div class="layer-label">API Gateway</div>
+                        <div class="arch-node gateway" data-info="Central entry point handling routing, auth, and rate limiting">
+                            <span class="node-icon">🚪</span>
+                            <span class="node-label">API Gateway</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">
+                        <svg viewBox="0 0 24 60" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 0 L12 50 M6 44 L12 50 L18 44"/>
+                        </svg>
+                    </div>
+                    <div class="arch-layer services-layer">
+                        <div class="layer-label">Microservices</div>
+                        <div class="arch-node service" data-info="Handles user authentication, authorization, and session management">
+                            <span class="node-icon">🔐</span>
+                            <span class="node-label">Auth Service</span>
+                        </div>
+                        <div class="arch-node service" data-info="Course CRUD, enrollment, and content delivery">
+                            <span class="node-icon">📚</span>
+                            <span class="node-label">Course Service</span>
+                        </div>
+                        <div class="arch-node service highlight" data-info="AI-powered chatbot with NLU and conversation management">
+                            <span class="node-icon">🤖</span>
+                            <span class="node-label">Chatbot Service</span>
+                        </div>
+                        <div class="arch-node service highlight" data-info="Multi-strategy recommendation engine">
+                            <span class="node-icon">🎯</span>
+                            <span class="node-label">Recommendation</span>
+                        </div>
+                    </div>
+                    <div class="arch-arrow">
+                        <svg viewBox="0 0 24 60" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 0 L12 50 M6 44 L12 50 L18 44"/>
+                        </svg>
+                    </div>
+                    <div class="arch-layer data-layer">
+                        <div class="layer-label">Data Layer</div>
+                        <div class="arch-node database" data-info="Primary relational database for structured data">
+                            <span class="node-icon">🗃️</span>
+                            <span class="node-label">PostgreSQL</span>
+                        </div>
+                        <div class="arch-node database" data-info="Caching layer for session and frequently accessed data">
+                            <span class="node-icon">⚡</span>
+                            <span class="node-label">Redis Cache</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section" id="experience">
+        <div class="section-header">
+            <span class="section-tag">My Journey</span>
+            <h2 class="section-title">Professional Experience</h2>
+            <p class="section-subtitle">Scroll through my career timeline</p>
+        </div>
+        <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-date">Jul 2024</div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Associate Software Developer</h3>
+                        <span class="timeline-company">Invince</span>
+                        <span class="timeline-location">📍 Pune, India</span>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="achievement-cards">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🤖</div>
+                                <div class="achievement-text">
+                                    <strong>Built AI Chatbot</strong>
+                                    <p>Enterprise conversational AI with Spring Boot microservices</p>
+                                </div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">📉</div>
+                                <div class="achievement-text">
+                                    <strong>30% Query Reduction</strong>
+                                    <p>Automated learner support through self-service actions</p>
+                                </div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🎯</div>
+                                <div class="achievement-text">
+                                    <strong>Recommendation Engine</strong>
+                                    <p>4-strategy learning recommendation system</p>
+                                </div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">⚡</div>
+                                <div class="achievement-text">
+                                    <strong>Full-Stack Ownership</strong>
+                                    <p>End-to-end feature development from design to deployment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-status current">
+                        <span class="status-badge">Current Role</span>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker">
+                    <div class="marker-dot"></div>
+                    <div class="marker-date">Jul 2023</div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">React JS Developer Intern</h3>
+                        <span class="timeline-company">Invince</span>
+                        <span class="timeline-location">📍 Pune, India</span>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="achievement-cards">
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🎨</div>
+                                <div class="achievement-text">
+                                    <strong>Multi-tenant LMS UI</strong>
+                                    <p>Responsive interfaces for learning management system</p>
+                                </div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🔗</div>
+                                <div class="achievement-text">
+                                    <strong>API Integration</strong>
+                                    <p>Connected React frontend with Spring Boot REST APIs</p>
+                                </div>
+                            </div>
+                            <div class="achievement-card">
+                                <div class="achievement-icon">🧩</div>
+                                <div class="achievement-text">
+                                    <strong>Component Library</strong>
+                                    <p>Modularized UI components for reusability</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item education" data-aos="fade-up">
+                <div class="timeline-marker">
+                    <div class="marker-dot edu"></div>
+                    <div class="marker-date">2019-2023</div>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">B.Tech in Computer Science</h3>
+                        <span class="timeline-company">Lovely Professional University</span>
+                    </div>
+                    <div class="timeline-body">
+                        <div class="education-highlight">
+                            <div class="cgpa-display">
+                                <span class="cgpa-value" data-count="8.79">0</span>
+                                <span class="cgpa-max">/ 10</span>
+                            </div>
+                            <span class="cgpa-label">CGPA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-bg">
+            <div class="gradient-orb orb-contact-1"></div>
+            <div class="gradient-orb orb-contact-2"></div>
+        </div>
+        <div class="section-header">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Let's Work Together</h2>
+            <p class="section-subtitle">I'm always open to discussing new opportunities</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-card">
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:anshumansingh906@gmail.com" class="contact-value">anshumansingh906@gmail.com</a>
+                    </div>
+                    <button class="copy-btn" data-copy="anshumansingh906@gmail.com" title="Copy to clipboard">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Phone</span>
+                        <a href="tel:+919131765508" class="contact-value">+91 9131765508</a>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon linkedin">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/ansh906" target="_blank" class="contact-value">linkedin.com/in/ansh906</a>
+                    </div>
+                    <a href="https://www.linkedin.com/in/ansh906" target="_blank" class="external-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3m-2 16H5V5h7V3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7h-2v7z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-cta">
+                <p>Ready to build something amazing?</p>
+                <a href="mailto:anshumansingh906@gmail.com" class="btn btn-primary btn-large">
+                    <span>Send me an email</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Designed & Built by <strong>Anshuman Singh</strong></p>
+            <p class="footer-year">© 2024</p>
+        </div>
+    </footer>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message" id="toastMessage">Copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
